@@ -1,0 +1,150 @@
+/* HERO SECTION */
+.hero {
+  height: 500px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-content {
+  margin-left: 70px;
+}
+
+.hero h1 {
+  font-size: 55px;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.hero button {
+  padding: 12px 30px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* SECTIONS COMMON */
+.categories,
+.products,
+.offer-section,
+.why-us {
+  padding: 60px;
+}
+
+.categories h2,
+.products h2,
+.offer-section h2,
+.why-us h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* CATEGORY GRID */
+.category-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  padding: 30px;
+  background: #f1f5f9;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px lightgray;
+  background: white;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-card h3,
+.product-card p {
+  padding: 10px;
+}
+
+.product-card button {
+  margin: 10px;
+  padding: 10px;
+  width: 90%;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* OFFER SECTION */
+.offer-card {
+  background: #2563eb;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 12px;
+}
+
+/* WHY US */
+.features {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.features div {
+  width: 220px;
+  background: #f8fafc;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.features div:hover {
+  background: #e2e8f0;
+  transform: translateY(-3px);
+}
