@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #2563eb
+  );
+}
+
+.register-card {
+    width: 550px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Scrollbar width */
+.register-card::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Scrollbar track */
+.register-card::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 40px;
+    margin: 15px 0;
+}
+
+/* Scrollbar thumb */
+.register-card::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 40px;
+    border: 2px solid white;
+}
+
+/* Hover effect */
+.register-card::-webkit-scrollbar-thumb:hover {
+    background: #1d4ed8;
+}
+
+
+.register-card h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.register-card p {
+  text-align: center;
+  color: gray;
+  margin-bottom: 25px;
+}
+
+.register-card h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+.input-field:focus {
+  border-color: #2563eb;
+}
+
+.address-box {
+  margin-bottom: 15px;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #10b981;
+  color: white;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+.add-btn:hover {
+  background: #059669;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: #1d4ed8;
+}
+
+.register-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.register-links a {
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.register-links a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 576px) {
+  .register-card {
+    width: 100%;
+    padding: 25px;
+  }
+}
