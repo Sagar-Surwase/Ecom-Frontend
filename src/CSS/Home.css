@@ -148,3 +148,14 @@
   background: #e2e8f0;
   transform: translateY(-3px);
 }
+
+
+.card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #e2e8f0;
+}
