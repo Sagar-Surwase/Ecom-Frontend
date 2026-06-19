@@ -1,24 +1,25 @@
 import { useForm } from "react-hook-form";
 import "../CSS/Login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function Login() 
 {
    let{register, handleSubmit, reset} = useForm();
 
+   let navigate = useNavigate();
+
     function onLogin(data)
     {
-      axios.get("http://localhost:9091/user/login/" +data.email+ "/" +data.password)
-      .then((res)=>{
-
-        console.log(res.data);
-
-        alert("Login Successful");
+      axios.get(`http://localhost:9091/user/login/${data.email}/${data.password}`)
+      .then((res) => {
+          localStorage.setItem("user", JSON.stringify(res.data));
+          localStorage.setItem("userId", res.data.id);
+          localStorage.setItem("role", res.data.role);
+          localStorage.setItem("userName", res.data.name);
+          navigate("/");
       })
-      .catch((errors)=> console.log(errors));
-      
-      
+      .catch((errors)=> console.log(errors));      
     }
 
 
@@ -49,7 +50,7 @@ function Login()
           </button>
 
           <div className="login-links">
-            <a href="#">Forgot Password?</a>
+            <p>Don't have an Account?</p>
             <Link to="/register">Create Account</Link>
           </div>
         </form>

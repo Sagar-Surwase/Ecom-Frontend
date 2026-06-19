@@ -1,0 +1,540 @@
+/* ===============================
+   SINGLE PRODUCT PAGE
+================================ */
+
+.single-product-wrapper {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.single-product-container {
+    display: flex;
+    gap: 50px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* ===============================
+   LEFT SECTION
+================================ */
+
+.product-images {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.thumbnail-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+
+    padding: 5px;
+
+    cursor: pointer;
+
+    background-color: #fff;
+
+    transition: all 0.3s ease;
+}
+
+.thumbnail-image:hover {
+    border-color: #0076ce;
+    transform: scale(1.05);
+}
+
+.active-thumbnail {
+    border: 2px solid #0076ce;
+}
+
+.main-image-container {
+    flex: 1;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 500px;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 550px;
+
+    object-fit: contain;
+
+    transition: transform 0.4s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.08);
+}
+
+/* ===============================
+   RIGHT SECTION
+================================ */
+
+.product-details {
+    flex: 1;
+}
+
+.category-name {
+    color: #0076ce;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-bottom: 20px;
+}
+
+.availability {
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+.availability span {
+    color: green;
+
+    font-weight: 600;
+}
+
+.price {
+    font-size: 36px;
+
+    color: #0076ce;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.stock {
+    font-size: 15px;
+
+    color: #4b5563;
+
+    margin-bottom: 30px;
+}
+
+/* ===============================
+   SUCCESS MESSAGE
+================================ */
+
+.success-message {
+    background-color: #d1fae5;
+
+    color: #065f46;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   QUANTITY SECTION
+================================ */
+
+.quantity-section {
+    margin-bottom: 30px;
+}
+
+.quantity-section h4 {
+    margin-bottom: 15px;
+}
+
+.quantity-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.quantity-box button {
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #f3f4f6;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.quantity-box button:hover {
+    background-color: #0076ce;
+
+    color: white;
+}
+
+.quantity-box span {
+    font-size: 22px;
+
+    font-weight: 600;
+
+    min-width: 30px;
+
+    text-align: center;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.button-group {
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 40px;
+}
+
+.add-cart-btn,
+.buy-now-btn {
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.add-cart-btn {
+    background-color: #ffb900;
+
+    color: #000;
+}
+
+.add-cart-btn:hover {
+    background-color: #f59e0b;
+}
+
+.buy-now-btn {
+    background-color: #0076ce;
+
+    color: white;
+}
+
+.buy-now-btn:hover {
+    background-color: #005ba1;
+}
+
+/* ===============================
+   LOADING
+================================ */
+
+.loading-container {
+    height: 70vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.loading-container h2 {
+    color: #0076ce;
+}
+
+/* ===============================
+   TABS
+================================ */
+
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin: 40px 0 30px;
+    flex-wrap: wrap;
+}
+
+.tabs button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #f3f4f6;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tabs button:hover {
+    background-color: #0076ce;
+    color: white;
+}
+
+.active-tab {
+    background-color: #0076ce !important;
+    color: white;
+}
+
+
+/* ===============================
+   OVERVIEW
+================================ */
+
+.overview {
+    background-color: #f9fafb;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+    line-height: 1.8;
+    color: #374151;
+}
+
+.overview p {
+    margin: 0;
+}
+
+
+/* ===============================
+   SPECIFICATIONS
+================================ */
+
+.specifications {
+    margin-top: 20px;
+}
+
+.specifications h3 {
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+.spec-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.spec-grid div {
+    background-color: #f9fafb;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.spec-grid strong {
+    color: #374151;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.spec-grid p {
+    margin: 0;
+    color: #111827;
+}
+
+
+/* ===============================
+   REVIEWS
+================================ */
+
+.reviews {
+    margin-top: 20px;
+}
+
+.review-card {
+    background-color: #f9fafb;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.review-card h4 {
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    margin: 0;
+    color: #4b5563;
+}
+
+
+/* ===============================
+   RELATED PRODUCTS
+================================ */
+
+.related-section {
+    margin-top: 60px;
+}
+
+.related-section h2 {
+    margin-bottom: 30px;
+    color: #111827;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.related-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.related-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.related-card h4 {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #111827;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.related-card p {
+    margin-top: 10px;
+    color: #0076ce;
+    font-weight: 600;
+}
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+
+    .single-product-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .product-images {
+        flex-direction: column-reverse;
+    }
+
+    .thumbnail-container {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .main-image-container {
+        min-height: 350px;
+    }
+
+    .main-image {
+        max-width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .add-cart-btn,
+    .buy-now-btn {
+        width: 100%;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .tabs {
+        justify-content: center;
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .single-product-wrapper {
+        padding: 0 10px;
+    }
+
+    .product-title {
+        font-size: 26px;
+    }
+
+    .price {
+        font-size: 28px;
+    }
+
+    .thumbnail-image {
+        width: 65px;
+        height: 65px;
+    }
+
+    .quantity-box {
+        justify-content: center;
+    }
+
+    .tabs button {
+        width: 100%;
+    }
+}

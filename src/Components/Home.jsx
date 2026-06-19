@@ -1,8 +1,20 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../CSS/Home.css";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+
+  const navigate = useNavigate();
+
+  function handleCategoryClick(category)
+  {
+    navigate(`/products/category/${category}`);
+  };
+
+
+
+
   return (
     <>
       <section className="hero">
@@ -15,16 +27,42 @@ function Home() {
         </div>
       </section>
 
-      <section className="categories">
-        <h2>Shop By Category</h2>
 
-        <div className="category-grid">
-          <div className="card">Gaming Laptops</div>
-          <div className="card">Business Laptops</div>
-          <div className="card">Student Laptops</div>
-          <div className="card">Accessories</div>
+     <section className="categories">
+      <h2>Shop By Category</h2>
+
+      <div className="category-grid">
+
+        <div
+          className="card"
+          onClick={() => handleCategoryClick("Gaming")}
+        >
+          Gaming Laptops
         </div>
-      </section>
+
+        <div
+          className="card"
+          onClick={() => handleCategoryClick("Business")}
+        >
+          Business Laptops
+        </div>
+
+        <div
+          className="card"
+          onClick={() => handleCategoryClick("Student")}
+        >
+          Student Laptops
+        </div>
+
+        <div
+          className="card"
+          onClick={() => handleCategoryClick("Home")}
+        >
+          Home Laptop
+        </div>
+
+      </div>
+    </section>
 
       <section className="products">
         <h2>Featured Laptops</h2>
